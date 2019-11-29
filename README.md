@@ -30,9 +30,9 @@
   ### You should be good to go now
   ## Generating files
   cd into the src folder of walmate and run 
-  `cargo run -- -h` - to get the help though it is really simple anyway
-  -b *Scheme name* - to select the desired scheme
-  -t *Light or Dark* - to select wether the scheme is a light or dark one (this
+  * `cargo run -- -h` - to get the help though it is really simple anyway
+  * -b *Scheme name* - to select the desired scheme
+  * -t *Light or Dark* - to select wether the scheme is a light or dark one (this
   is not necessary if N/A)
   and thats basically it for generating the files.
   
