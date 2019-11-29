@@ -1,0 +1,117 @@
+* {
+    base00: #$base00;
+    base01: #$base01;
+    base02: #$base02;
+    base03: #$base03;
+    base04: #$base04;
+    base05: #$base05;
+    base06: #$base06;
+    base07: #$base07;
+    base08: #$base08;
+    base09: #$base09;
+    base0A: #$base0A;
+    base0B: #$base0B;
+    base0C: #$base0C;
+    base0D: #$base0D;
+    base0E: #$base0E;
+    base0F: #$base0F;
+    spacing: 0em;
+    // font: "Iosevka Term Regular 14";
+    padding: 0px;
+    background-color: @base00;
+    line-style: "none";
+}
+
+prompt-box {
+    background-color: @base0D;
+}
+
+prompt {
+    background-color: @base0D;
+    text-color: @base07;
+}
+
+window {
+    background-color: @base00;
+    fullscreen: true;
+}
+
+mainbox {
+    padding: 0em;
+    margin: 20%;
+    // background-color: @base00;
+    //background-color: #00000000;
+    color: @base06;
+    border: 0em;
+    spacing: 0%;
+}
+
+listview {
+    // Looks.
+    border-radius: 0;
+    border: 0;
+    padding: 0;
+    // margin: 1em;
+    // background-color: @base0D;
+    // Enable scrollbar
+    scrollbar: false;
+    scrollbar-width: 0;
+    fixed-height: true;
+    reverse: false;
+    color: @base0A;
+    // spacing: 0.3em;
+}
+scrollbar {
+    color: @base0B;
+    background-color: @base07;
+    // padding: 10px;
+}
+element {
+    padding: 1em;
+    color: @base0D;
+}
+element selected.normal {
+    border-radius: 0px;
+    color: @base07;
+    background-color: @base0C;
+}
+inputbar {
+    spacing: 0;
+    // background-color: #88003300;
+    // border: 0px 0px 2px 0px;
+    // border-radius: 0px;
+    padding: 1em;
+    background-color: @base08;
+    color: @base07;
+    end: false;
+}
+
+separator {
+    background-color: @base05;
+    color: @base00;
+}
+
+prompt {
+    background-color: #00000000;
+    color: @base0A;
+    padding: 0 1em 0 0;
+    // margin: 1em;
+}
+entry {
+    background-color: #00000000;
+    color: @base07;
+    // padding: 1em;
+}
+
+case-indicator {
+    background-color: #00000000;
+    // color: #ff0000;
+    // padding: 0px;
+}
+
+message {
+    margin: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 5px 5px 5px 5px;
+}
