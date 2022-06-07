@@ -91,9 +91,9 @@ $sidebar_color:         lighten($blue_500, 0.2);
 $accent_color:          $deep_purple_A200;
 $disabled_accent_color: rgba($accent_color, 0.5);
 
-$theme_color_top:    lighten($purple_500, 0.1);
-$theme_color_middle: $purple_500;
-$theme_color_bottom: darken($purple_500, 0.1);
+$theme_color_top:    lighten($red_500, 0.1);
+$theme_color_middle: $red_500;
+$theme_color_bottom: darken($red_500, 0.1);
 $theme_image: linear-gradient(to bottom, $theme_color_middle, $theme_color_bottom);
 $header_theme_image: linear-gradient(to bottom, $theme_color_top, $theme_color_middle);
 

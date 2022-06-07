@@ -1,0 +1,12 @@
+[package]
+name = "walmate"
+version = "0.1.0"
+authors = ["scorcia <nathanielstewartmcintosh@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+rust-ini = "*"
+clap = "*"
+dirs = "*"
+serde_yaml = "*"
+serde_derive = "*"

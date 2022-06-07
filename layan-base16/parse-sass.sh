@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
 set -ueo pipefail
 
 if [ ! "$(which sassc 2> /dev/null)" ]; then

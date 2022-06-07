@@ -25,8 +25,8 @@ fn main() {
             "definitions" => {link(&settings.build_dir, &file.name, "~/.urxvt/colors/");},
             "rofi.rasi" => {link(&settings.build_dir, &file.name, "~/.config/rofi/");},
             "rofi.config" => {link(&settings.build_dir, &file.name, "~/.config/rofi/");},
-            "walmate.vim" => {link(&settings.build_dir, &file.name, "~/.vim/colors/");},
-            "walmate_lightline.vim" => {link(&settings.build_dir, &file.name, "~/.vim/autoload/lightline/colorscheme");},
+            "walmate.vim" => {link(&settings.build_dir, &file.name, "~/.config/nvim/colors/");},
+            "walmate_lightline.vim" => {link(&settings.build_dir, &file.name, "~/.config/nvim/plugged/lightline.vim/autoload/lightline/colorscheme");},
             "walmate-theme.el" => {link(&settings.build_dir, &file.name, "~/.emacs.d/themes/");},
             "dunstrc" => {link(&settings.build_dir, &file.name, "~/.config/dunst/");},
             "walmate_qutebrowser.py" => {link(&settings.build_dir, &file.name, "~/.config/qutebrowser/config.py");},
@@ -36,8 +36,11 @@ fn main() {
             "Widget - Walmate.stTheme" => {link(&settings.build_dir, &file.name, "~/syc/Dropbox/dot/cnf/sublime-text-3/Packages/'Theme - Walmate'/widgets/");},
             "walmate-color-palette.scss" => {link(&settings.build_dir, &file.name, "~/syc/Dropbox/prg/rust/walmate/gtk/walmate-gtk-theme/src/_sass/_color-palette.scss")},
             "colors.conf" => {link(&settings.build_dir, &file.name, "~/syc/Dropbox/dot/cnf/kitty/colors.conf");},
-            "_color-palette.scss" => {link(&settings.build_dir, &file.name, "~/prg/rust/walmate/walmate-gtk-theme/src/_sass/_color-palette.scss");},
-            "walmate.json" => {link(&settings.build_dir, &file.name, "~/.vscode/extensions/infraorder.walmate-base16-themes-1.0.0/themes/")},
+            "_color-palette.scss" => {link(&settings.build_dir, &file.name, "~/prg/rust/walmate/layan-base16/src/_sass/_color-palette.scss");},
+            "walmate.json" => {link(&settings.build_dir, &file.name, "~/.vscode-oss/extensions/infraorder.walmate-base16-themes-1.0.0/themes/")},
+            "colors.i3" => {link(&settings.build_dir, &file.name, "~/.config/i3/colors")},
+            "walmate.colorscheme" => {link(&settings.build_dir, &file.name, "~/.config/qterminal.org/color-schemes/walmate.colorscheme")},
+            "walmate.kak" => {link(&settings.build_dir, &file.name, "~/.config/kak/colors/")},
             _ => {}
         }
     }

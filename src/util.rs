@@ -83,6 +83,16 @@ pub fn hex_to_rgb(hex: &String) -> (String, String, String) {
 
 pub fn link(build_dir: &str, file_name: &str, destination: &str) {
     println!("linking {} to {}", file_name, destination);
-    println!("command is: {}", &("ln -s ".to_string() + &get_home_dir(&build_dir.to_string()) + "'" + &file_name + "' " + destination));
-    println!("{:?}", command(&("ln -s ".to_string() + &get_home_dir(&build_dir.to_string()) + "'" + &file_name + "' " + destination)));
+    // println!("command is: {}", &("ln -s ".to_string() + &get_home_dir(&build_dir.to_string()) + "'" + &file_name + "' " + destination));
+    let complete_out = command(&("ln -s ".to_string() + &get_home_dir(&build_dir.to_string()) + "'" + &file_name + "' " + destination)).stderr.to_owned();
+    let out = String::from_utf8_lossy(&complete_out);
+    if out.contains("failed to ") {
+        if out.contains("File exists") {
+            println!("file exists");
+            command(&("rm ".to_owned() + destination));
+            println!("{:?}", String::from_utf8_lossy(&command(&("ln -s ".to_string() + &get_home_dir(&build_dir.to_string()) + "'" + &file_name + "' " + destination)).stderr));
+            let complete_out = command(&("ln -s ".to_string() + &get_home_dir(&build_dir.to_string()) + "'" + &file_name + "' " + destination)).stderr.to_owned();
+            let out = String::from_utf8_lossy(&complete_out);
+        }
+    };
 }

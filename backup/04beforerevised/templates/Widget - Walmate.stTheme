@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>InfraOrder</string>
+	<key>comment</key>
+	<string>Walmate</string>
+	<key>name</key>
+	<string>Walmate</string>
+	<key>settings</key>
+	<array>
+		<dict>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#$base00</string>
+				<key>caret</key>
+				<string>#$base02</string>
+				<key>foreground</key>
+				<string>#$base02</string>
+				<key>invisibles</key>
+				<string>#$base01</string>
+				<key>selection</key>
+				<string>#$base01</string>
+				<key>selectionBorder</key>
+				<string>#00000000</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,5 +1,5 @@
 #!/bin/env python3
-desired_file = "walmate.json"
+desired_file = "walmate.kak"
 
 with open(desired_file, 'r') as myfile:
     data=myfile.read()

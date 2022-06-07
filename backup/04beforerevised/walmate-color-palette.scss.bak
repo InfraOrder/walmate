@@ -1,0 +1,339 @@
+// based color palette:
+// https://material.io/guidelines/style/color.html#color-color-palette
+
+$b-00: #$base00;
+$b-01: #$base01;
+$b-02: #$base02;
+$b-03: #$base03;
+$b-04: #$base04;
+$b-05: #$base05;
+$b-06: #$base06;
+$b-07: #$base07; // white
+$b-08: #$base08; // red
+$b-09: #$base09; // orange
+$b-0A: #$base0A; // yellow
+$b-0B: #$base0B; // green
+$b-0C: #$base0C; // cyan
+$b-0D: #$base0D; // blue
+$b-0E: #$base0E; // pink/purple
+$b-0F: #$base0F; // orange2
+
+$primary_color:         $b-0D;
+$alt_primary_color:     darken($b-0D, 10%);
+$progress_color:        lighten($b-0D, 10%);
+$sidebar_color:         darken($b-07, 10%);
+
+$theme_color_top:    lighten($b-0D, 10%);
+$theme_color_middle: lighten($b-0D, 15%);
+$theme_color_bottom: lighten($b-0D, 20%);
+
+
+// Red
+$red_50:   lighten($b-08, 50%);
+$red_100:  lighten($b-08, 40%);
+$red_200:  lighten($b-08, 30%);
+$red_300:  lighten($b-08, 20%);
+$red_400:  lighten($b-08, 10%);
+$red_500:  $b-08;
+$red_600:  darken($b-08, 10%);
+$red_700:  darken($b-08, 20%);
+$red_800:  darken($b-08, 30%);
+$red_900:  darken($b-08, 40%);
+$red_A100: desaturate($b-08, 80%) ;
+$red_A200: desaturate($b-08, 40%) ;
+$red_A400: scale-color($b-08, $saturation: -40%);
+$red_A700: scale-color($b-08, $saturation: -80%);
+
+// Pink
+$pink_50:   lighten($b-0E, 50%);
+$pink_100:  lighten($b-0E, 40%);
+$pink_200:  lighten($b-0E, 30%);
+$pink_300:  lighten($b-0E, 20%);
+$pink_400:  lighten($b-0E, 10%);
+$pink_500:  $b-0E;
+$pink_600:  darken($b-0E, 10%);
+$pink_700:  darken($b-0E, 20%);
+$pink_800:  darken($b-0E, 30%);
+$pink_900:  darken($b-0E, 40%);
+$pink_A100: desaturate($b-0E, 80%);
+$pink_A200: desaturate($b-0E, 40%);
+$pink_A400: scale-color($b-0E, $saturation: -40%);
+$pink_A700: scale-color($b-0E, $saturation: -80%);
+
+// Purple
+$purple: adjust-hue($b-0E, 10%); // hopefully this is a decent hue
+$purple_50:   lighten($purple, 50%);
+$purple_100:  lighten($purple, 40%);
+$purple_200:  lighten($purple, 30%);
+$purple_300:  lighten($purple, 20%);
+$purple_400:  lighten($purple, 10%);
+$purple_500:  $purple;
+$purple_600:  darken($purple, 10%);
+$purple_700:  darken($purple, 20%);
+$purple_800:  darken($purple, 30%);
+$purple_900:  darken($purple, 40%);
+$purple_A100: desaturate($purple, 80%);
+$purple_A200: desaturate($purple, 40%);
+$purple_A400: scale-color($purple, $saturation: -40%);
+$purple_A700: scale-color($purple, $saturation: -80%);
+
+// Deep Purple
+$deep_purple: darken(adjust-hue($b-0E, 15%), 20%);
+$deep_purple_50:   lighten($deep_purple, 50%);
+$deep_purple_100:  lighten($deep_purple, 40%);
+$deep_purple_200:  lighten($deep_purple, 30%);
+$deep_purple_300:  lighten($deep_purple, 20%);
+$deep_purple_400:  lighten($deep_purple, 10%);
+$deep_purple_500:  $deep_purple;
+$deep_purple_600:  darken($deep_purple, 10%);
+$deep_purple_700:  darken($deep_purple, 20%);
+$deep_purple_800:  darken($deep_purple, 30%);
+$deep_purple_900:  darken($deep_purple, 40%);
+$deep_purple_A100: desaturate($deep_purple, 80%);
+$deep_purple_A200: desaturate($deep_purple, 40%);
+$deep_purple_A400: scale-color($deep_purple, $saturation: -40%);
+$deep_purple_A700: scale-color($deep_purple, $saturation: -80%);
+
+// Indigo
+
+$indigo: adjust-hue($b-0E, -10%);
+$indigo_50:   lighten($indigo, 50%);
+$indigo_100:  lighten($indigo, 40%);
+$indigo_200:  lighten($indigo, 30%);
+$indigo_300:  lighten($indigo, 20%);
+$indigo_400:  lighten($indigo, 10%);
+$indigo_500:  $indigo;
+$indigo_600:  darken($indigo, 10%);
+$indigo_700:  darken($indigo, 20%);
+$indigo_800:  darken($indigo, 30%);
+$indigo_900:  darken($indigo, 40%);
+$indigo_A100: desaturate($indigo, 80%);
+$indigo_A200: desaturate($indigo, 40%);
+$indigo_A400: scale-color($indigo, $saturation: -40%);
+$indigo_A700: scale-color($indigo, $saturation: -80%);
+
+// Blue
+$blue_50:   lighten($b-0E, 50%);
+$blue_100:  lighten($b-0E, 40%);
+$blue_200:  lighten($b-0E, 30%);
+$blue_300:  lighten($b-0E, 20%);
+$blue_400:  lighten($b-0E, 10%);
+$blue_500:  $b-0E;
+$blue_600:  darken($b-0E, 10%);
+$blue_700:  darken($b-0E, 20%);
+$blue_800:  darken($b-0E, 30%);
+$blue_900:  darken($b-0E, 40%);
+$blue_A100: desaturate($b-0E, 80%);
+$blue_A200: desaturate($b-0E, 40%);
+$blue_A400: scale-color($b-0E, $saturation: -40%);
+$blue_A700: scale-color($b-0E, $saturation: -80%);
+
+// Light Blue
+$light_blue: lighten($b-0E, 20%);
+$light_blue_50:   lighten($light_blue, 50%);
+$light_blue_100:  lighten($light_blue, 40%);
+$light_blue_200:  lighten($light_blue, 30%);
+$light_blue_300:  lighten($light_blue, 20%);
+$light_blue_400:  lighten($light_blue, 10%);
+$light_blue_500:  $light_blue;
+$light_blue_600:  darken($light_blue, 10%);
+$light_blue_700:  darken($light_blue, 20%);
+$light_blue_800:  darken($light_blue, 30%);
+$light_blue_900:  darken($light_blue, 40%);
+$light_blue_A100: desaturate($light_blue, 80%);
+$light_blue_A200: desaturate($light_blue, 40%);
+$light_blue_A400: scale-color($light_blue, $saturation: -40%);
+$light_blue_A700: scale-color($light_blue, $saturation: -80%);
+
+// Cyan
+$cyan_50:   lighten($b-0D, 50%);
+$cyan_100:  lighten($b-0D, 40%);
+$cyan_200:  lighten($b-0D, 30%);
+$cyan_300:  lighten($b-0D, 20%);
+$cyan_400:  lighten($b-0D, 10%);
+$cyan_500:  $b-0D;
+$cyan_600:  darken($b-0D, 10%);
+$cyan_700:  darken($b-0D, 20%);
+$cyan_800:  darken($b-0D, 30%);
+$cyan_900:  darken($b-0D, 40%);
+$cyan_A100: desaturate($b-0D, 80%);
+$cyan_A200: desaturate($b-0D, 40%);
+$cyan_A400: scale-color($b-0D, $saturation: -40%);
+$cyan_A700: scale-color($b-0D, $saturation: -80%);
+
+// Teal
+$teal: desaturate($b-0D, 15%);
+$teal_50:   lighten($teal, 50%);
+$teal_100:  lighten($teal, 40%);
+$teal_200:  lighten($teal, 30%);
+$teal_300:  lighten($teal, 20%);
+$teal_400:  lighten($teal, 10%);
+$teal_500:  $teal;
+$teal_600:  darken($teal, 10%);
+$teal_700:  darken($teal, 20%);
+$teal_800:  darken($teal, 30%);
+$teal_900:  darken($teal, 40%);
+$teal_A100: desaturate($teal, 80%);
+$teal_A200: desaturate($teal, 40%);
+$teal_A400: scale-color($teal, $saturation: -40%);
+$teal_A700: scale-color($teal, $saturation: -80%);
+
+// Green
+$green_50:   lighten($b-0B, 50%);
+$green_100:  lighten($b-0B, 40%);
+$green_200:  lighten($b-0B, 30%);
+$green_300:  lighten($b-0B, 20%);
+$green_400:  lighten($b-0B, 10%);
+$green_500:  $b-0B;
+$green_600:  darken($b-0B, 10%);
+$green_700:  darken($b-0B, 20%);
+$green_800:  darken($b-0B, 30%);
+$green_900:  darken($b-0B, 40%);
+$green_A100: desaturate($b-0B, 80%);
+$green_A200: desaturate($b-0B, 40%);
+$green_A400: scale-color($b-0B, $saturation: -40%);
+$green_A700: scale-color($b-0B, $saturation: -80%);
+
+// Light Green
+$light_green: lighten($b-0B, 60%);
+$light_green_50:   lighten($light_green, 50%);
+$light_green_100:  lighten($light_green, 40%);
+$light_green_200:  lighten($light_green, 30%);
+$light_green_300:  lighten($light_green, 20%);
+$light_green_400:  lighten($light_green, 10%);
+$light_green_500:  $light_green;
+$light_green_600:  darken($light_green, 10%);
+$light_green_700:  darken($light_green, 20%);
+$light_green_800:  darken($light_green, 30%);
+$light_green_900:  darken($light_green, 40%);
+$light_green_A100: desaturate($light_green, 80%);
+$light_green_A200: desaturate($light_green, 40%);
+$light_green_A400: scale-color($light_green, $saturation: -40%);
+$light_green_A700: scale-color($light_green, $saturation: -80%);
+
+// Lime
+$lime: adjust_hue($b-0B, 20%);
+$lime_50:   lighten($lime, 50%);
+$lime_100:  lighten($lime, 40%);
+$lime_200:  lighten($lime, 30%);
+$lime_300:  lighten($lime, 20%);
+$lime_400:  lighten($lime, 10%);
+$lime_500:  $lime;
+$lime_600:  darken($lime, 10%);
+$lime_700:  darken($lime, 20%);
+$lime_800:  darken($lime, 30%);
+$lime_900:  darken($lime, 40%);
+$lime_A100: desaturate($lime, 80%);
+$lime_A200: desaturate($lime, 40%);
+$lime_A400: scale-color($lime, $saturation: -40%);
+$lime_A700: scale-color($lime, $saturation: -80%);
+
+// Yellow
+$yellow_50:   lighten($b-0A, 50%);
+$yellow_100:  lighten($b-0A, 40%);
+$yellow_200:  lighten($b-0A, 30%);
+$yellow_300:  lighten($b-0A, 20%);
+$yellow_400:  lighten($b-0A, 10%);
+$yellow_500:  $b-0A;
+$yellow_600:  darken($b-0A, 10%);
+$yellow_700:  darken($b-0A, 20%);
+$yellow_800:  darken($b-0A, 30%);
+$yellow_900:  darken($b-0A, 40%);
+$yellow_A100: desaturate($b-0A, 80%);
+$yellow_A200: desaturate($b-0A, 40%);
+$yellow_A400: scale-color($b-0A, $saturation: -40%);
+$yellow_A700: scale-color($b-0A, $saturation: -80%);
+
+// Amber
+$amber_50:   lighten($b-09, 50%);
+$amber_100:  lighten($b-09, 40%);
+$amber_200:  lighten($b-09, 30%);
+$amber_300:  lighten($b-09, 20%);
+$amber_400:  lighten($b-09, 10%);
+$amber_500:  $b-09;
+$amber_600:  darken($b-09, 10%);
+$amber_700:  darken($b-09, 20%);
+$amber_800:  darken($b-09, 30%);
+$amber_900:  darken($b-09, 40%);
+$amber_A100: desaturate($b-09, 80%);
+$amber_A200: desaturate($b-09, 40%);
+$amber_A400: scale-color($b-09, $saturation: -40%);
+$amber_A700: scale-color($b-09, $saturation: -80%);
+
+// Orange
+$orange_50:   lighten($b-0F, 50%);
+$orange_100:  lighten($b-0F, 40%);
+$orange_200:  lighten($b-0F, 30%);
+$orange_300:  lighten($b-0F, 20%);
+$orange_400:  lighten($b-0F, 10%);
+$orange_500:  $b-0F;
+$orange_600:  darken($b-0F, 10%);
+$orange_700:  darken($b-0F, 20%);
+$orange_800:  darken($b-0F, 30%);
+$orange_900:  darken($b-0F, 40%);
+$orange_A100: desaturate($b-0F, 80%);
+$orange_A200: desaturate($b-0F, 40%);
+$orange_A400: scale-color($b-0F, $saturation: -40%);
+$orange_A700: scale-color($b-0F, $saturation: -80%);
+
+// Deep Orange
+$deep_orange_50:   lighten($b-08, 50%);
+$deep_orange_100:  lighten($b-08, 40%);
+$deep_orange_200:  lighten($b-08, 30%);
+$deep_orange_300:  lighten($b-08, 20%);
+$deep_orange_400:  lighten($b-08, 10%);
+$deep_orange_500:  $b-08;
+$deep_orange_600:  darken($b-08, 10%);
+$deep_orange_700:  darken($b-08, 20%);
+$deep_orange_800:  darken($b-08, 30%);
+$deep_orange_900:  darken($b-08, 40%);
+$deep_orange_A100: desaturate($b-08, 80%);
+$deep_orange_A200: desaturate($b-08, 40%);
+$deep_orange_A400: scale-color($b-08, $saturation: -40%);
+$deep_orange_A700: scale-color($b-08, $saturation: -80%);
+
+// Brown
+$brown_50:  desaturate($b-00, 1%);
+$brown_100: desaturate($b-00, 1%);
+$brown_200: desaturate($b-01, 1%);
+$brown_300: desaturate($b-01, 1%);
+$brown_400: desaturate($b-02, 1%);
+$brown_500: desaturate($b-03, 1%);
+$brown_600: desaturate($b-03, 1%);
+$brown_700: scale-color($b-04,$saturation:  1%);
+$brown_800: desaturate($b-05, 1%);
+$brown_900: desaturate($b-06, 1%);
+
+// Grey
+$grey_50:  $b-00;
+$grey_100: lighten($b-00, 1%);
+$grey_200: $b-01;
+$grey_300: lighten($b-01, 1%);
+$grey_400: $b-02;
+$grey_500: lighten($b-02, 1%);
+$grey_600: $b-03;
+$grey_700: lighten($b-03, 1%);
+$grey_750: $b-04;
+$grey_800: $b-05;
+$grey_850: lighten($b-05, 1%);
+$grey_900: $b-06;
+
+// Blue Grey
+$blue_grey_50:  scale-color($b-00, $saturation: -10%);
+$blue_grey_100: lighten(scale-color($b-00, $saturation: -10%), 1%);
+$blue_grey_200: scale-color($b-01, $saturation: -10%);
+$blue_grey_300: lighten(scale-color($b-01, $saturation: -10%), 1%);
+$blue_grey_400: scale-color($b-02, $saturation: -10%);
+$blue_grey_500: lighten(scale-color($b-02, $saturation: -10%), 1%);
+$blue_grey_600: scale-color($b-03, $saturation: -10%);
+$blue_grey_700: lighten(scale-color($b-03, $saturation: -10%), 1%);
+$blue_grey_750: scale-color($b-04, $saturation: -10%);
+$blue_grey_800: scale-color($b-05, $saturation: -10%);
+$blue_grey_850: lighten(scale-color($b-05, $saturation: -10%), 1%);
+$blue_grey_900: scale-color($b-06, $saturation: -10%);
+
+// Black
+$black: $b-01;
+
+// White
+$white: $b-07;

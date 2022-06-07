@@ -1,33 +1,33 @@
-;;; walmate.el
+;;; walmate.el -*- no-byte-compile: t; -*- -- Walmate theme
 (require 'doom-themes)
 
 (defgroup walmate-theme nil
   "Options for doom-themes"
   :group 'doom-themes)
 
-(defcustom walmate-padded-modeline doom-themes-padded-modeline
+(defcustom walmate-modeline doom-themes-padded-modeline
   "If non-nil, adds a 4px padding to the mode-line. Can be an integer to
 determine the exact padding."
   :group 'walmate-theme
   :type '(choice integer boolean))
 
 (def-doom-theme walmate
-  "Doom emacs theme BASED on base16"
+  "A theme based off of Chris Kempson' base16 "
 
   ;; name        gui       256       16
-  ((bg         '("#$base01" nil       nil          ))
-   (bg-alt     '("#$base00" nil       nil          ))
+  ((bg         '("#$base01" nil       nil           ))
+   (bg-alt     '("#$base00" nil       nil           ))
    (base0      '("#$base01" "#$base01"              ))
-   (base1      (doom-lighten base0 0.01))
+   (base1      (doom-lighten base0 0.01             ))
    (base2      '("#$base02" "#$base02"              ))
-   (base3      (doom-lighten base2 0.01))
+   (base3      (doom-lighten bg-alt 0.1            ))
    (base4      '("#$base03" "#$base03" "brightblack"))
    (base5      '("#$base04" "#$base04" "brightblack"))
    (base6      '("#$base05" "#$base05" "brightblack"))
    (base7      '("#$base06" "#$base06" "brightblack"))
    (base8      '("#$base07" "#$base07" "white"      ))
-   (fg         '("#$base06" "#$base06" "white"))
-   (fg-alt     (doom-darken fg 0.4))
+   (fg         '("#$base06" "#$base06" "white"      ))
+   (fg-alt     (doom-darken fg 0.4                  ))
 
    (grey       '("#$base04" "#$base04" "brightblack"))
    (red        '("#$base08" "#$base08" "red"))
@@ -36,16 +36,16 @@ determine the exact padding."
    (green      '("#$base0B" "#$base0B" "green"))
    (blue       '("#$base0C" "#$base0C" "brightblue"))
    (dark-blue  '("#$base0D" "#$base0D" "blue"))
-   (teal       (doom-lighten blue 0.1)) ; FIXME replace with real teal
+   (teal       (doom-lighten blue 0.5)) ; FIXME replace with real teal
    (magenta    '("#$base0E" "#$base0E" "magenta"))
-   (violet     (doom-darken blue 0.1))
+   (violet     (doom-darken blue 0.5))
    (cyan       '("#$base0F" "#$base0F" "cyan"))
    (dark-cyan  (doom-darken cyan 0.1))
 
    ;; face categories
    (highlight      blue)
-   (vertical-bar   `("#$base00" ,@base0))
-   (selection      `(,(car (doom-lighten bg 0.1)) ,@(cdr base2)))
+   (vertical-bar   base0)
+   (selection      `(,(car (doom-lighten bg 0.1)) ,@(cdr base4)))
    (builtin        blue)
    (comments       grey)
    (doc-comments   (doom-lighten grey 0.14))
@@ -68,15 +68,14 @@ determine the exact padding."
 
    ;; custom categories
    (modeline-bg     `(,(doom-darken (car bg-alt) 0.3) ,@(cdr base1)))
-   (modeline-bg-alt `(,(car bg) ,@(cdr base2)))
-   (modeline-fg     base7)
+   (modeline-bg-alt `(,(car bg) ,@(cdr base1)))
+   (modeline-fg     base8)
    (modeline-fg-alt comments)
    (-modeline-pad
-    (when walmate-padded-modeline
-      (if (integerp walmate-padded-modeline)
-          walmate-padded-modeline
+    (when walmate-modeline
+      (if (integerp walmate-modeline)
+          walmate-modeline
         4))))
-
   ;; --- faces ------------------------------
   ((doom-modeline-buffer-path       :foreground violet :bold bold)
    (doom-modeline-buffer-major-mode :inherit 'doom-modeline-buffer-path)

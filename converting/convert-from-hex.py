@@ -1,6 +1,6 @@
 #!/bin/env python3
-desired_file = "walmate.json"
-colors_file = "colors"
+desired_file = "./base16-3024.colorscheme"
+colors_file = "./3024.yaml"
 
 with open(desired_file, 'r') as myfile:
     data=myfile.read()

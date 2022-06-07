@@ -1,0 +1,18 @@
+# from pywal
+NAME=walmate
+BG=$base00
+FG=$base07
+MENU_BG=$base00
+MENU_FG=$base07
+SEL_BG=$base08
+SEL_FG=$base02
+TXT_BG=$base01
+TXT_FG=$base07
+BTN_BG=$base04
+BTN_FG=$base01
+HDR_BTN_BG=$base02
+HDR_BTN_FG=$base09
+GTK3_GENERATE_DARK=True
+ROUNDNESS=0
+SPACING=3
+GRADIENT=0.0

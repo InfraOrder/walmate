@@ -1,0 +1,120 @@
+* {
+  base00: #1d1f21;
+  base01: #282a2e;
+  base02: #373b41;
+  base03: #969896;
+  base04: #b4b7b4;
+  base05: #c5c8c6;
+  base06: #e0e0e0;
+  base07: #ffffff;
+  base08: #cc6666;
+  base09: #de935f;
+  base0A: #f0c674;
+  base0B: #b5bd68;
+  base0C: #8abeb7;
+  base0D: #81a2be;
+  base0E: #b294bb;
+  base0F: #a3685a;
+
+	spacing: 0;
+	background-color: transparent;
+
+	font: "FuraCode NF 25";
+}
+
+window {
+	transparency: "real";
+	fullscreen: true;
+	background-color: @base00;
+}
+
+mainbox {
+	children: [inputbar, message, sidebar, listview];
+	spacing: 30px;
+	margin: 30%;
+	padding: 30px 0;
+	border: 0px;
+	border-color: @base0D;
+}
+
+inputbar {
+	padding: 0 30px;
+	children: [prompt, textbox-prompt-colon, entry, case-indicator];
+}
+
+prompt {
+	text-color: @base0D;
+}
+
+textbox-prompt-colon {
+	expand: false;
+	str: ":";
+	margin: 0 1ch 0 0;
+	text-color: @base0D;
+}
+
+entry {
+	text-color: @base07;
+}
+
+case-indicator {
+	text-color: @base0F;
+}
+
+sidebar, message {
+	border: 1px 0;
+	border-color: @base0D;
+}
+
+button, textbox {
+	background-color: @base03;
+	text-color: @base07;
+	padding: 5px;
+}
+
+button selected {
+	background-color: @base0D;
+}
+
+listview {
+	scrollbar: false;
+	margin: 0 10px 0 30px;
+}
+
+scrollbar {
+	background-color: @base03;
+	handle-color: @base0D;
+	handle-width: 10px;
+	border: 0 1px;
+	border-color: @base0D;
+	margin: 0 0 0 20px;
+}
+
+element {
+	padding: 5px;
+	highlight: bold underline;
+}
+
+element normal {
+	background-color: transparent;
+}
+
+element selected {
+	background-color: @base0D;
+}
+
+element alternate {
+	/*background-color: @base03;*/
+}
+
+element normal normal, element selected normal, element alternate normal {
+	text-color: @base07;
+}
+
+element normal urgent, element selected urgent, element alternate urgent {
+	text-color: @base0F;
+}
+
+element normal active, element selected active, element alternate active {
+	text-color: @base0B;
+}
